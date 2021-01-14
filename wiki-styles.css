@@ -2,12 +2,15 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: justify;
-  padding-left: 15.5%;
-  padding-right: 0.25%;
+  margin: 0;
 }
 
 #pagecontent-main {
-  margin-top: 78px;
+  margin-top: 80px;
+  height: calc(100vh - 100px);
+  padding-right: 18px;
+  padding-left: 220px;
+  overflow-y: scroll;
 }
 
 /* LOGO DESIGN */
@@ -16,22 +19,27 @@ body {
   display: block;
   top: 0%;
   left: 0%;
-  width: 14.8vw;
-  max-width: 30%;
+  z-index: 9001;
+  min-width: 12vw;
+  max-width: 15%;
 }
 #logopic {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: 10vw;
-  max-width: 100%;
+  width: 200px;
+  height: 130px;
 }
 /* LOGO DESIGN END */
 /* TOP NAV-BAR */
 .navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   position: fixed;
-  width: 85%;
+  width: 100%;
+  height: 70px;
   top: 0%;
   right: 0;
   z-index: 1;
@@ -39,7 +47,6 @@ body {
 }
 /* nav-links style */
 .nav-links {
-  float: right;
   display: flex;
   list-style-type: none;
   overflow: hidden;
@@ -73,20 +80,27 @@ body {
 /* SIDE NAV-BAR START */
 #side-nav {
   height: 100%;
-  width: 15%;
+  width: 200px;
+  max-width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: rgb(192, 159, 159);
   overflow-x: hidden;
-  margin-top: 10%;
+  margin-top: 120px;
   transition: 0.5s;
 }
-.sidenav-links * {
+.sidenav-links {
+  display: block;
   list-style-type: none;
-  padding: 6px;
+  padding: 2px;
+  padding-left: 15px;
 }
+.top {
+  padding-top: 15px;
+}
+
 .sidelink {
   text-decoration: none;
   color: black;
@@ -94,5 +108,17 @@ body {
 .sidelink:hover {
   color: #f1f1f1;
 }
+
+#contributors {
+  display: inline-block;
+  padding-top: 15px;
+  padding-left: 12px;
+  font-weight: 600;
+}
 /* SIDE NAV-BAR END */
 /* HEADER  */
+#head {
+  position: relative;
+  padding-right: 377px;
+  padding-bottom: 20px;
+}
