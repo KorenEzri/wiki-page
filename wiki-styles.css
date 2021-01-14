@@ -161,4 +161,17 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+  max-width: 60%;
+  padding: 12px;
+}
+
+#aboutimage {
+  position: relative;
+  top: -400px;
+}
+
+#japanpic {
+  width: 62.5%;
+  height: auto;
+  padding-top: 10px;
 }
