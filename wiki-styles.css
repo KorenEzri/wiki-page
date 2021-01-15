@@ -3,6 +3,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: justify;
   margin: 0;
+  overflow-y: hidden;
 }
 
 /* LOGO DESIGN */
@@ -19,8 +20,8 @@ body {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
-  height: 130px;
+  width: 250px;
+  height: 180px;
 }
 /* LOGO DESIGN END */
 /* TOP NAV-BAR */
@@ -116,7 +117,7 @@ body {
 }
 
 /* HEADER END */
-/* CONTENTS */
+/* CONTENTS - MAIN */
 
 #pagecontent-main {
   margin-top: 80px;
@@ -175,3 +176,233 @@ body {
   height: auto;
   padding-top: 10px;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/**********
+  iPad 3
+  **********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+#checkbox,
+.btn span {
+  /* Hide the checkbox input & word "Menu" in the button */
+  display: none;
+}
+
+/* Menu button - starts */
+.btn {
+  display: block;
+  background-color: #247d9e;
+  color: #fff;
+  width: 55px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  margin-top: 180px;
+  cursor: pointer;
+  transition: width 0.3s ease-in-out;
+}
+/* Menu button - ends */
+
+/* Sidebar - starts */
+.sidebar {
+  background-color: #2b2e33;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-250px);
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebar ul a {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  color: #bab5bd;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+.sidebar ul a li i {
+  margin-right: 21px;
+}
+
+/* Add margin to the icon in the second item */
+.sidebar ul a:nth-child(2) li i {
+  margin-left: 4px;
+  margin-right: 19px;
+}
+
+.sidebar ul a:hover,
+.sidebar ul a.active {
+  background-color: #161920;
+  color: #fff;
+}
+
+.sidebar ul a:hover::before,
+.sidebar ul a.active::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #247d9e;
+  width: 4px;
+  height: 100%;
+}
+/* Sidebar - ends */
+
+/* Effect of showing the sidebar - starts */
+#checkbox:checked ~ .sidebar {
+  transform: translateX(0);
+}
+
+#checkbox:checked + .btn {
+  width: 250px;
+  padding: 0 20px;
+}
+
+#checkbox:checked + .btn span {
+  /* Show again the word "Menu" in the button */
+  display: inline;
+}
+/* Effect of showing the sidebar - ends */
