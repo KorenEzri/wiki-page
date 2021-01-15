@@ -2,6 +2,7 @@ body {
   text-align: justify;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 * {
@@ -128,8 +129,10 @@ body {
   padding: 10px;
   /* width: calc(100vw - (248px)); */
   height: calc(100vh - (20px));
-  margin-top: -150px;
+  margin-top: -500px;
   margin-left: 249px;
+  padding-bottom: 250px;
+  overflow-y: scroll;
 }
 
 /* TABLE OF CONTENTS: */
@@ -226,18 +229,21 @@ body {
 
   .btn {
     position: relative;
-    right: -270px;
+    right: -250px;
     top: -110px;
+    z-index: 9001;
   }
 
   .sidebar {
+    position: absolute;
     margin-left: 250px;
     margin-top: -110px;
     z-index: 9001;
-    display: block;
+    max-height: 200px;
   }
 
   .sidebar * {
+    position: relative;
     font-size: 12px;
     z-index: 9001;
   }
@@ -260,16 +266,37 @@ body {
 
   #page-wrapper {
     position: relative;
-    right: 270px;
+    right: 260px;
     width: 705px;
   }
+
+  #main-wrapper {
+    display: block;
+    padding: 10px;
+    height: calc(100vh - (20px));
+    margin-top: -150px;
+    margin-left: 249px;
+    overflow-y: scroll;
+  }
+
   #about {
+    position: relative;
     width: 420px;
     margin-left: 15px;
   }
 
+  #about-japan {
+    z-index: -1;
+  }
+
+  #aboutbtn {
+    width: 100px;
+    left: 300px;
+  }
+
   .collapsible {
     display: block;
+    z-index: 10;
   }
 
   #aboutimage {
@@ -289,9 +316,12 @@ body {
 
   #content-list * {
     position: relative;
-    z-index: unset;
     padding: 4px;
     font-size: 15px;
+    left: 35px;
+    top: 10px;
+    color: #2b2e33;
+    list-style-type: none;
   }
 
   #smalltitle {
@@ -309,6 +339,7 @@ body {
     margin-left: -16px;
     padding: 6px;
     font-size: 14px;
+    color: #2b2e33;
   }
   #japanpic {
     width: 400px;
@@ -324,83 +355,6 @@ body {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-  .nonmobile {
-    display: none;
-  }
-
-  #side-nav {
-    display: none;
-  }
-  .navigation-bar {
-    font-size: 12px;
-  }
-  .nav-links * {
-    font-size: 12px;
-  }
-  #head {
-    font-size: 11px;
-  }
-  #logopic {
-    display: none;
-  }
-
-  #page-wrapper {
-    position: relative;
-    right: 270px;
-    width: 705px;
-  }
-  #about {
-    width: 420px;
-    margin-left: 15px;
-  }
-
-  .collapsible {
-    display: block;
-  }
-
-  #aboutimage {
-    margin-top: 20px;
-  }
-
-  #contents {
-    width: 400px;
-    max-width: 1000px;
-    margin-top: 6px;
-    border: solid 2px black;
-  }
-
-  #content-list {
-    margin-top: 20px;
-  }
-
-  #content-list * {
-    position: relative;
-    z-index: 10;
-    padding: 4px;
-    font-size: 15px;
-  }
-
-  #smalltitle {
-    position: relative;
-    font-size: 14px;
-    margin-left: 180px;
-    top: -135px;
-  }
-
-  #moreinfo {
-    margin-left: 220px;
-    margin-top: -135px;
-  }
-  #moreinfo * {
-    margin-left: -16px;
-    padding: 6px;
-    font-size: 14px;
-  }
-  #japanpic {
-    width: 400px;
-    padding-top: 20px;
-    padding-left: 50px;
-  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -544,7 +498,6 @@ body {
 /* Sidebar - starts */
 .sidebar {
   background-color: #2b2e33;
-  position: fixed;
   width: 250px;
   height: 100%;
   z-index: 1;
