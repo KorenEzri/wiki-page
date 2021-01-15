@@ -224,6 +224,110 @@ body {
     display: none;
   }
 
+  .btn {
+    position: relative;
+    right: -270px;
+    top: -110px;
+  }
+
+  .sidebar {
+    margin-left: 250px;
+    margin-top: -110px;
+    z-index: 9001;
+    display: block;
+  }
+
+  .sidebar * {
+    font-size: 12px;
+    z-index: 9001;
+  }
+
+  #side-nav {
+    display: none;
+  }
+  .navigation-bar {
+    font-size: 12px;
+  }
+  .nav-links * {
+    font-size: 12px;
+  }
+  #head {
+    font-size: 11px;
+  }
+  #logopic {
+    display: none;
+  }
+
+  #page-wrapper {
+    position: relative;
+    right: 270px;
+    width: 705px;
+  }
+  #about {
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  .collapsible {
+    display: block;
+  }
+
+  #aboutimage {
+    margin-top: 20px;
+  }
+
+  #contents {
+    width: 400px;
+    max-width: 1000px;
+    margin-top: 6px;
+    border: solid 2px black;
+  }
+
+  #content-list {
+    margin-top: 20px;
+  }
+
+  #content-list * {
+    position: relative;
+    z-index: unset;
+    padding: 4px;
+    font-size: 15px;
+  }
+
+  #smalltitle {
+    position: relative;
+    font-size: 14px;
+    margin-left: 180px;
+    top: -135px;
+  }
+
+  #moreinfo {
+    margin-left: 220px;
+    margin-top: -135px;
+  }
+  #moreinfo * {
+    margin-left: -16px;
+    padding: 6px;
+    font-size: 14px;
+  }
+  #japanpic {
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .nonmobile {
+    display: none;
+  }
+
   #side-nav {
     display: none;
   }
@@ -297,16 +401,6 @@ body {
     padding-top: 20px;
     padding-left: 50px;
   }
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
