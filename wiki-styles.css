@@ -131,7 +131,7 @@ body {
   height: calc(100vh - (20px));
   margin-top: -360px;
   margin-left: 249px;
-  padding-bottom: 250px;
+  padding-bottom: 50px;
   overflow-y: scroll;
 }
 
@@ -219,6 +219,80 @@ body {
   width: 62.5%;
   margin-left: 10px;
   padding-bottom: 10px;
+}
+
+/* FOOTER START here */
+
+/* footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  background: #dedef11c;
+  border-top: 8px solid #38282838;
+  height: 150px;
+} */
+
+/* FOOTER END here */
+
+/* CONTACT */
+#contactheader {
+  display: flex;
+  flex-direction: column;
+  color: rgb(95, 16, 16);
+  border-top: 5px solid rgba(0, 0, 0, 0.212);
+  background-color: rgba(245, 222, 179, 0.418);
+}
+
+#contactheader h2 {
+  display: flex;
+  justify-content: center;
+  color: rgb(158, 41, 41);
+}
+
+#contactheader p {
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+#gitpic {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border-radius: 60%;
+  margin-bottom: 10px;
+  width: 95px;
+  bottom: 5px;
+  padding: 10px;
+}
+
+#codepenpic {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 90px;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+#youtubeicon {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: auto;
+  width: 100px;
+  border-radius: 11%;
+  padding: 10px;
+  top: 5px;
+}
+
+#contactainer {
+  display: flex;
+  justify-content: center;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
