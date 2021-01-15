@@ -95,6 +95,7 @@ body {
   list-style-type: none;
   padding: 2px;
   padding-left: 15px;
+  font-size: 18px;
 }
 .top {
   padding-top: 15px;
@@ -152,12 +153,14 @@ body {
   position: relative;
   z-index: 10;
   padding: 6px;
+  font-size: 14px;
 }
 
 #smalltitle {
   padding-top: 4px;
   margin-bottom: -10px;
   padding-left: 9px;
+  font-size: 14px;
 }
 
 #moreinfo * {
@@ -166,6 +169,7 @@ body {
   padding: 8px;
   margin-left: -8px;
   list-style-type: none;
+  font-size: 14px;
 }
 
 .content-item :hover {
@@ -175,6 +179,14 @@ body {
   border-radius: 6px;
 }
 /* TABLE OF CONTENTS END */
+
+#description {
+  font-weight: bold;
+}
+
+#about-japan {
+  padding-top: 10px;
+}
 
 #about {
   /* margin-top: 35px; */
@@ -220,19 +232,6 @@ body {
   margin-left: 10px;
   padding-bottom: 10px;
 }
-
-/* FOOTER START here */
-
-/* footer {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  background: #dedef11c;
-  border-top: 8px solid #38282838;
-  height: 150px;
-} */
-
-/* FOOTER END here */
 
 /* CONTACT */
 #contactheader {
@@ -295,8 +294,517 @@ body {
   justify-content: center;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones */
+
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 500px) and (max-device-width: 900px) {
+  /* LOGO DESIGN */
+  /* #logo {
+    position: fixed;
+    display: block;
+    top: 70px;
+    left: 0%;
+    z-index: 9001;
+    min-width: 12vw;
+    max-width: 12%;
+  } */
+  #logopic {
+    /* display: inline-block;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 120px;
+    height: 120px;
+  }
+  /* LOGO DESIGN END */
+  /* TOP NAV-BAR */
+  /* nav-links style */
+
+  .nav-links * {
+    position: relative;
+    padding: 3px;
+    font-size: 14px;
+    left: -20px;
+  }
+  /* nav-links style END */
+  /* TOP NAV-BAR END */
+  /* SIDE NAV-BAR START */
+  #side-nav {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    display: relative;
+    z-index: 1;
+    top: -60px;
+    left: 0;
+    background-color: rgb(192, 159, 159);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .sidenav-links {
+    display: block;
+    list-style-type: none;
+    padding: 2px;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  /* SIDE NAV-BAR END */
+  /* HEADER  */
+  #head {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+    padding-right: 96px;
+    padding-left: 26px;
+    font-size: 16px;
+  }
+
+  /* HEADER END */
+  /* CONTENTS - MAIN */
+
+  #main-wrapper {
+    padding: 10px;
+    /* width: calc(100vw - (248px)); */
+    height: calc(100vh - (20px));
+    margin-top: -360px;
+    margin-left: 249px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
+  /* TABLE OF CONTENTS: */
+
+  #contents {
+    display: block;
+    width: 46%;
+    max-width: 250px;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: solid 2px black;
+    float: right;
+  }
+
+  #content-list * {
+    position: relative;
+    z-index: 10;
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  #smalltitle {
+    padding-top: 4px;
+    margin-bottom: -10px;
+    padding-left: 9px;
+    font-size: 14px;
+  }
+
+  #moreinfo * {
+    position: relative;
+    z-index: 10;
+    padding: 8px;
+    margin-left: -8px;
+    list-style-type: none;
+    font-size: 14px;
+  }
+
+  .content-item :hover {
+    background-color: rgb(179, 157, 157);
+
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+  }
+  /* TABLE OF CONTENTS END */
+
+  #description {
+    font-weight: bold;
+  }
+
+  #about-japan {
+    padding-top: 10px;
+  }
+
+  #page-wrapper {
+    position: relative;
+    right: 220px;
+    width: 955px;
+  }
+
+  #about {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 320px;
+    left: 90px;
+    padding: 9px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    margin-top: -75px;
+  }
+
+  .collapsible {
+    position: relative;
+    display: none;
+    background-color: rgb(194, 137, 137);
+    color: #444;
+    cursor: pointer;
+    padding: 6px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  #aboutimage {
+    position: relative;
+  }
+
+  #japanpic {
+    display: flex;
+    width: 62.5%;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* CONTACT */
+  #contactheader {
+    display: flex;
+    flex-direction: column;
+    color: rgb(95, 16, 16);
+    border-top: 5px solid rgba(0, 0, 0, 0.212);
+    background-color: rgba(245, 222, 179, 0.418);
+  }
+
+  #contactheader h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(158, 41, 41);
+  }
+
+  #contactheader p {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  #gitpic {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 60%;
+    margin-bottom: 10px;
+    width: 95px;
+    bottom: 5px;
+    padding: 10px;
+  }
+
+  #codepenpic {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 90px;
+    border-radius: 10%;
+    padding: 10px;
+  }
+
+  #youtubeicon {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: auto;
+    width: 100px;
+    border-radius: 11%;
+    padding: 10px;
+    top: 5px;
+  }
+
+  #contactainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-device-width: 500px) {
+  .nonmobile {
+    display: none;
+  }
+
+  .btn {
+    position: relative;
+    right: -250px;
+    top: -110px;
+    z-index: 9001;
+  }
+
+  .sidebar {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -110px;
+    z-index: 9001;
+    max-height: 200px;
+  }
+
+  .sidebar * {
+    position: relative;
+    font-size: 12px;
+    z-index: 9001;
+  }
+
+  #side-nav {
+    display: none;
+  }
+  .navigation-bar {
+    font-size: 12px;
+  }
+  .nav-links * {
+    font-size: 12px;
+  }
+  #head {
+    font-size: 16px;
+  }
+  #logopic {
+    display: none;
+  }
+
+  #page-wrapper {
+    position: relative;
+    right: 250px;
+    width: 705px;
+  }
+
+  #main-wrapper {
+    display: block;
+    position: relative;
+    padding: 10px;
+    height: calc(100vh - (20px));
+    margin-top: -150px;
+    left: 20px;
+    overflow-y: scroll;
+  }
+
+  #about {
+    position: relative;
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  #about-japan {
+    z-index: -1;
+  }
+
+  #aboutbtn {
+    width: 100px;
+    left: 300px;
+  }
+
+  .collapsible {
+    display: block;
+    z-index: 10;
+  }
+
+  #aboutimage {
+    margin-top: 20px;
+  }
+
+  #contents {
+    width: 400px;
+    max-width: 1000px;
+    margin-top: 6px;
+    border: solid 2px black;
+  }
+
+  #content-list {
+    margin-top: 20px;
+  }
+
+  #content-list * {
+    position: relative;
+    padding: 4px;
+    font-size: 15px;
+    left: 35px;
+    top: 10px;
+    color: #2b2e33;
+    list-style-type: none;
+  }
+
+  #smalltitle {
+    position: relative;
+    font-size: 14px;
+    margin-left: 180px;
+    top: -135px;
+  }
+
+  #moreinfo {
+    margin-left: 220px;
+    margin-top: -135px;
+  }
+  #moreinfo * {
+    margin-left: -16px;
+    padding: 6px;
+    font-size: 14px;
+    color: #2b2e33;
+  }
+  #japanpic {
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
+  #contactheader {
+    position: relative;
+    top: -30px;
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-device-width: 480px) {
+  .nonmobile {
+    display: none;
+  }
+
+  .btn {
+    position: relative;
+    right: -250px;
+    top: -110px;
+    z-index: 9001;
+  }
+
+  .sidebar {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -110px;
+    z-index: 9001;
+    max-height: 200px;
+  }
+
+  .sidebar * {
+    position: relative;
+    font-size: 12px;
+    z-index: 9001;
+  }
+
+  #side-nav {
+    display: none;
+  }
+  .navigation-bar {
+    font-size: 12px;
+  }
+  .nav-links * {
+    font-size: 12px;
+  }
+  #head {
+    font-size: 12px;
+  }
+  #logopic {
+    display: none;
+  }
+
+  #page-wrapper {
+    position: relative;
+    right: 255px;
+    width: 705px;
+  }
+
+  #main-wrapper {
+    display: block;
+    padding: 10px;
+    height: calc(100vh - (20px));
+    margin-top: -150px;
+    margin-left: 249px;
+    overflow-y: scroll;
+  }
+
+  #about {
+    position: relative;
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  #about-japan {
+    z-index: -1;
+  }
+
+  #aboutbtn {
+    width: 100px;
+    left: 300px;
+  }
+
+  .collapsible {
+    display: block;
+    z-index: 10;
+  }
+
+  #aboutimage {
+    margin-top: 20px;
+  }
+
+  #contents {
+    width: 400px;
+    max-width: 1000px;
+    margin-top: 6px;
+    border: solid 2px black;
+  }
+
+  #content-list {
+    margin-top: 20px;
+  }
+
+  #content-list * {
+    position: relative;
+    padding: 4px;
+    font-size: 15px;
+    left: 35px;
+    top: 10px;
+    color: #2b2e33;
+    list-style-type: none;
+  }
+
+  #smalltitle {
+    position: relative;
+    font-size: 14px;
+    margin-left: 180px;
+    top: -135px;
+  }
+
+  #moreinfo {
+    margin-left: 220px;
+    margin-top: -135px;
+  }
+  #moreinfo * {
+    margin-left: -16px;
+    padding: 6px;
+    font-size: 14px;
+    color: #2b2e33;
+  }
+  #japanpic {
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
+  #contactheader {
+    position: relative;
+    top: -30px;
+  }
+}
+
+/* Smartphones */
+@media only screen and (max-width: 320px) {
   .nonmobile {
     display: none;
   }
@@ -420,41 +928,13 @@ body {
     padding-top: 20px;
     padding-left: 50px;
   }
+
+  #contactheader {
+    position: relative;
+    top: -30px;
+  }
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */
-}
-/**********
-  iPad 3
-  **********/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-}
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   /* Styles */
@@ -464,89 +944,6 @@ body {
 @media only screen and (min-width: 1824px) {
   /* Styles */
 }
-
-/* iPhone 4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-/* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-/* iPhone 6, 7, 8 ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-/* iPhone 6+, 7+, 8+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-/* iPhone X ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-/* iPhone XS Max, XR ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-/* Samsung Galaxy S3 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-/* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-/* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-}
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 #checkbox,
 .btn span {
