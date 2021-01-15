@@ -1,23 +1,22 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: justify;
   margin: 0;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* LOGO DESIGN */
 #logo {
   position: fixed;
   display: block;
-  top: 0%;
+  top: 70px;
   left: 0%;
   z-index: 9001;
   min-width: 12vw;
@@ -42,7 +41,7 @@ body {
   height: 70px;
   top: 0%;
   right: 0;
-  z-index: 1;
+  z-index: 9001;
   background: rgb(238, 225, 225);
 }
 /* nav-links style */
@@ -69,12 +68,12 @@ body {
   display: flex;
   bottom: 200px;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .nav-link {
     float: none;
     width: 100%;
   }
-}
+} */
 /* nav-links style END */
 /* TOP NAV-BAR END */
 /* SIDE NAV-BAR START */
@@ -87,7 +86,7 @@ body {
   left: 0;
   background-color: rgb(192, 159, 159);
   overflow-x: hidden;
-  margin-top: 180px;
+  margin-top: 250px;
   transition: 0.5s;
 }
 .sidenav-links {
@@ -126,49 +125,41 @@ body {
 /* CONTENTS - MAIN */
 
 #main-wrapper {
-  overflow-y: scroll;
-  width: 100%;
+  padding: 10px;
+  /* width: calc(100vw - (248px)); */
   height: calc(100vh - (20px));
-  padding: 6px;
-  margin-top: -160px;
-}
-
-#pagecontent-main {
-  display: inline-block;
-  float: right;
-  width: 80%;
-  padding: 1px;
+  margin-top: -150px;
+  margin-left: 249px;
 }
 
 /* TABLE OF CONTENTS: */
 
-#content-table {
-  background-color: red;
-}
-
 #contents {
-  display: inline-block;
+  display: block;
   width: 25%;
-  padding: 1px;
+  max-width: 250px;
   border-radius: 12px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 6px;
   border: solid 2px black;
   float: right;
 }
 
 #content-list * {
+  position: relative;
+  z-index: 10;
   padding: 6px;
 }
 
 #smalltitle {
   padding-top: 4px;
   margin-bottom: -10px;
-  padding-left: 14px;
+  padding-left: 9px;
 }
 
 #moreinfo * {
+  position: relative;
+  z-index: 10;
   padding: 8px;
   margin-left: -8px;
   list-style-type: none;
@@ -176,21 +167,44 @@ body {
 
 .content-item :hover {
   background-color: rgb(179, 157, 157);
+
   color: rgb(255, 255, 255);
   border-radius: 6px;
 }
 /* TABLE OF CONTENTS END */
 
 #about {
-  margin-top: 6px;
+  /* margin-top: 35px; */
   display: flex;
   flex-direction: column;
   padding: 9px;
-  border: 1px solid grey;
   box-sizing: border-box;
   text-align: justify;
   line-height: 1.5;
   letter-spacing: 1.5;
+  margin-top: -65px;
+}
+
+.collapsible {
+  position: relative;
+  display: none;
+  background-color: rgb(194, 137, 137);
+  color: #444;
+  cursor: pointer;
+  padding: 6px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 
 #aboutimage {
@@ -198,13 +212,91 @@ body {
 }
 
 #japanpic {
+  display: flex;
   width: 62.5%;
-  padding-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 10px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */
+@media only screen and (min-width: 320px) and (max-device-width: 480px) {
+  .nonmobile {
+    display: none;
+  }
+
+  #side-nav {
+    display: none;
+  }
+  .navigation-bar {
+    font-size: 12px;
+  }
+  .nav-links * {
+    font-size: 12px;
+  }
+  #head {
+    font-size: 11px;
+  }
+  #logopic {
+    display: none;
+  }
+
+  #page-wrapper {
+    position: relative;
+    right: 270px;
+    width: 705px;
+  }
+  #about {
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  .collapsible {
+    display: block;
+  }
+
+  #aboutimage {
+    margin-top: 20px;
+  }
+
+  #contents {
+    width: 400px;
+    max-width: 1000px;
+    margin-top: 6px;
+    border: solid 2px black;
+  }
+
+  #content-list {
+    margin-top: 20px;
+  }
+
+  #content-list * {
+    position: relative;
+    z-index: 10;
+    padding: 4px;
+    font-size: 15px;
+  }
+
+  #smalltitle {
+    position: relative;
+    font-size: 14px;
+    margin-left: 180px;
+    top: -135px;
+  }
+
+  #moreinfo {
+    margin-left: 220px;
+    margin-top: -135px;
+  }
+  #moreinfo * {
+    margin-left: -16px;
+    padding: 6px;
+    font-size: 14px;
+  }
+  #japanpic {
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -331,6 +423,7 @@ body {
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */
 }
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 #checkbox,
