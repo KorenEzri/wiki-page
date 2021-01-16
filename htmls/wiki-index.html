@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips In Japan - Korepedia</title>
-    <link rel="stylesheet" href="/wiki-styles.css">
+    <script src="wiki.js" defer></script>
+    <link rel="stylesheet" href="/wiki11-styles.css">
+
 </head>
 <body>
     <div id="page-wrapper">
-        <div id="logo"><img src="dadada.PNG" alt="" id="logopic"></div>
+        <div id="logo"><img src="/pics/wikilogo.jpg" alt="" id="logopic"></div>
         <!-- TOP NAV START -->
         <div id="top-nav">
             <nav id="navbar" class="navigation-bar">
@@ -26,7 +28,7 @@
         </div>
             <!-- TOP NAV END -->
             <!-- SIDE PANEL START -->
-        <div id="side-nav">
+        <div id="side-nav">             
             <ul class="sidenav-links top">
                 <li><a href="" class="sidelink first">Projects</a></li>
                 <li><a href="" class="sidelink">Contact Me</a></li>
@@ -47,49 +49,89 @@
                 <li><a href="" class="sidelink">Content</a></li>
             </ul>
         </div>
-            <!-- SIDE PANEL END -->
-            <!-- MAIN CONTENT START -->
-        <div id="pagecontent-main">
-                <div id="contents">
-                    <div id="content-table">
-                        <ol id="content-list">
-                            <li class="content-item"><a href="">About Japan</a></li>
-                            <li class="content-item"><a href="">Places to see</a></li>
-                            <li class="content-item"><a href="">Food in Japan</a></li>
-                            <li class="content-item"><a href="">Places to avoid</a></li>
-                        </ol>
-                        <div id="othersites">
-                            <p id="smalltitle">More information about Japan:</p>
-                            <ul id="moreinfo">
+        <!-- SIDE PANEL END -->
+        <!-- SMALL SCREEN SIDE PANEL START -->
+        <input type="checkbox" id="checkbox">
+        <label class="btn" for="checkbox"><i class="fa fa-bars"></i> <span>Menu</span></label>
+        <div class="sidebar">
+            <ul>
+                <a href="#" class="active"><li><i class="fa fa-line-chart"></i>Home</li></a>
+                <a href="#"><li><i class="fa fa-television"></i>Merch</li></a>
+                <a href="#"><li><i class="fa fa-send"></i>Watch Videos</li></a>
+                <a href="#"><li><i class="fa fa-wpforms"></i>Pictures</li></a>
+                <!-- <a href="#" class="hidden"><li class="hidden"><i class="fa fa-paint-brush hidden"></i></li></a>
+                <a href="#" class="hidden"><li class="hidden"><i class="fa fa-file-text-o hidden"></i></li></a>
+                <a href="#" class="hidden"><li ><i class="fa fa-globe hidden"></i></li></a> -->
+            </ul>
+        </div>
+        <!-- SMALL SCREEN SIDE PANEL END -->
+        <!-- MAIN CONTENT START -->
+        <div id="main-wrapper">
+            <!-- <div id="pagecontent-main"> -->
+                    <div id="contents">
+                        <div id="content-table">
+                            <ol id="content-list">
+                                <li class="content-item"><a href="">About Japan</a></li>
+                                <li class="content-item"><a href="">Places to see</a></li>
+                                <li class="content-item"><a href="">Food in Japan</a></li>
                                 <li class="content-item"><a href="">Places to avoid</a></li>
-                                <li class="content-item"><a href="">Places to avoid</a></li>
-                                <li class="content-item"><a href="">Places to avoid</a></li>
-                                <li class="content-item"><a href="">Places to avoid</a></li>
-                                <li class="content-item"><a href="">Places to avoid</a></li>
-                            </ul>
+                            </ol>
+                            <div id="othersites">
+                                <p id="smalltitle">More information:</p>
+                                <ul id="moreinfo">
+                                    <li class="content-item"><a href="">Places to avoid</a></li>
+                                    <li class="content-item"><a href="">Places to avoid</a></li>
+                                    <li class="content-item"><a href="">Places to avoid</a></li>
+                                    <li class="content-item"><a href="">Places to avoid</a></li>
+                                    <li class="content-item"><a href="">Places to avoid</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="aboutimage">
-                    <div id="about">
-                        <p id="about-japan">Japan (Japanese: 日本, Nippon [ɲippoꜜɴ] (About this soundlisten) or Nihon [ɲihoꜜɴ] (About this soundlisten)) is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. Part of the Ring of Fire, Japan spans an archipelago of 6852 islands covering 377,975 square kilometers (145,937 sq mi); the five main islands are Hokkaido, Honshu, Shikoku, Kyushu, and Okinawa. Tokyo is Japan's capital and largest city; other major cities include Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto.</p>
+                    <div id="aboutimage">
+                        <div id="about">
+                                <button type="button" class="collapsible" id="aboutbtn">Japan</button>
+                                <p id="about-japan" class="content"><span id="description">Japan</span> (Japanese: 日本, Nippon [ɲippoꜜɴ] (About this soundlisten) or Nihon [ɲihoꜜɴ] (About this soundlisten)) is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. Part of the Ring of Fire, Japan spans an archipelago of 6852 islands covering 377,975 square kilometers (145,937 sq mi); the five main islands are Hokkaido, Honshu, Shikoku, Kyushu, and Okinawa. Tokyo is Japan's capital and largest city; other major cities include Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto. <br> <br>
+
+                                    Japan is the eleventh-most populous country in the world, as well as one of the most densely populated and urbanized. About three-fourths of the country's terrain is mountainous, concentrating its population of 125.71 million on narrow coastal plains. Japan is divided into 47 administrative prefectures and eight traditional regions. The Greater Tokyo Area is the most populous metropolitan area in the world, with more than 37.4 million residents. <br><br>
+                                    
+                                    Japan has been inhabited since the Upper Paleolithic period (30,000 BC), though the first mentions of the archipelago appear in Chinese chronicles from the 1st century AD. Between the 4th and 9th centuries, the kingdoms of Japan became unified under an emperor and his imperial court based in Heian-kyō. Beginning in the 12th century, however, political power was held by a series of military dictators (shōgun) and feudal lords (daimyō), and enforced by a class of warrior nobility (samurai). After a century-long period of civil war, the country was reunified in 1603 under the Tokugawa shogunate, which enacted an isolationist foreign policy. In 1854, a United States fleet forced Japan to open trade to the West, which led to the end of the shogunate and the restoration of imperial power in 1868. In the Meiji period, the Empire of Japan adopted a Western-styled constitution and pursued a program of industrialization and modernization. In 1937, Japan invaded China; in 1941, it entered World War II as an Axis power. After suffering defeat in the Pacific War and two atomic bombings, Japan surrendered in 1945 and came under a seven-year Allied occupation, during which it adopted a new constitution. Since 1947, Japan has maintained a unitary parliamentary constitutional monarchy with a bicameral legislature, the National Diet. <br><br>
+                                    
+                                    Japan is a great power and a member of numerous international organizations, including the United Nations (since 1956), the OECD, and the Group of Seven. Although it has renounced its right to declare war, the country maintains Self-Defense Forces that are ranked as the world's fourth-most powerful military. After World War II, Japan experienced high economic growth, becoming the second-largest economy in the world by 1990 before being surpassed by China in 2010. Despite stagnant growth since the Lost Decade, the country's economy remains the third-largest by nominal GDP and the fourth-largest by PPP. A leader in the automotive and electronics industries, Japan has made significant contributions to science and technology. Ranked the second-highest country on the Human Development Index in Asia after Singapore, Japan has the world's second-highest life expectancy, though it is experiencing a decline in population. The culture of Japan is well-known around the world, including its art, cuisine, music, and popular culture, which encompasses prominent animation and video game industries.</p>
+                                <p id="about-japan" class="nonmobile" id="nonemobile-paragraph"><span id="description">Japan</span> (Japanese: 日本, Nippon [ɲippoꜜɴ] (About this soundlisten) or Nihon [ɲihoꜜɴ] (About this soundlisten)) is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. Part of the Ring of Fire, Japan spans an archipelago of 6852 islands covering 377,975 square kilometers (145,937 sq mi); the five main islands are Hokkaido, Honshu, Shikoku, Kyushu, and Okinawa. Tokyo is Japan's capital and largest city; other major cities include Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto. <br> <br>
+
+                                    Japan is the eleventh-most populous country in the world, as well as one of the most densely populated and urbanized. About three-fourths of the country's terrain is mountainous, concentrating its population of 125.71 million on narrow coastal plains. Japan is divided into 47 administrative prefectures and eight traditional regions. The Greater Tokyo Area is the most populous metropolitan area in the world, with more than 37.4 million residents. <br><br>
+                                    
+                                    Japan has been inhabited since the Upper Paleolithic period (30,000 BC), though the first mentions of the archipelago appear in Chinese chronicles from the 1st century AD. Between the 4th and 9th centuries, the kingdoms of Japan became unified under an emperor and his imperial court based in Heian-kyō. Beginning in the 12th century, however, political power was held by a series of military dictators (shōgun) and feudal lords (daimyō), and enforced by a class of warrior nobility (samurai). After a century-long period of civil war, the country was reunified in 1603 under the Tokugawa shogunate, which enacted an isolationist foreign policy. In 1854, a United States fleet forced Japan to open trade to the West, which led to the end of the shogunate and the restoration of imperial power in 1868. In the Meiji period, the Empire of Japan adopted a Western-styled constitution and pursued a program of industrialization and modernization. In 1937, Japan invaded China; in 1941, it entered World War II as an Axis power. After suffering defeat in the Pacific War and two atomic bombings, Japan surrendered in 1945 and came under a seven-year Allied occupation, during which it adopted a new constitution. Since 1947, Japan has maintained a unitary parliamentary constitutional monarchy with a bicameral legislature, the National Diet. <br><br>
+                                    
+                                    Japan is a great power and a member of numerous international organizations, including the United Nations (since 1956), the OECD, and the Group of Seven. Although it has renounced its right to declare war, the country maintains Self-Defense Forces that are ranked as the world's fourth-most powerful military. After World War II, Japan experienced high economic growth, becoming the second-largest economy in the world by 1990 before being surpassed by China in 2010. Despite stagnant growth since the Lost Decade, the country's economy remains the third-largest by nominal GDP and the fourth-largest by PPP. A leader in the automotive and electronics industries, Japan has made significant contributions to science and technology. Ranked the second-highest country on the Human Development Index in Asia after Singapore, Japan has the world's second-highest life expectancy, though it is experiencing a decline in population. The culture of Japan is well-known around the world, including its art, cuisine, music, and popular culture, which encompasses prominent animation and video game industries.</p>
+                        </div>
+                        <div id="about-picture">
+                            <img src="dadada.PNG" alt="" id="japanpic">
+                        </div>
                     </div>
-                    <div id="picture1">
-                        <img src="dadada.PNG" alt="" id="japanpic">
-                    </div>
-                </div>
-        </div>
+            <!-- </div> -->
             <!-- MAIN CONTENT END -->
             <!-- CONTACT START -->
-            <div class="contact">
-
-            </div>
-            <!-- CONTACT END -->
+            <span id="contactlink"></span>
+            <section id="contact" class="contactme">
+                <div id="contactheader">
+                    <h2>Contact Me!</h2>
+                    <div id="contactainer">
+                        <a id="profile-link" href="https://github.com/KorenEzri" alt="mygithub" target="_blank"><img id="gitpic" src="/pics/githubicon.png" alt="githubicon" width="60px"></a>
+                        <a href="https://codepen.io/korenezri" alt="mycodepen" target="_blank"><img id="codepenpic" alt="codepen" src="/pics/codepen-icon.jpg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UC3MLSRJPtXbFcWapQ9KeSCQ" alt="myyoutube" target="_blank"><img id="youtubeicon" src="/pics/youTubeicon.png" alt="youtube"></a>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACT
+             CONTACT END -->
             <!-- FOOTER START -->
-            <footer class="footer">
-
+            <!-- <footer class="footer">
+                <p></p>
+                <p></p>
             </footer>
-            <!-- FOOTER END -->
+            FOOTER END -->
     </div>
 </body>
 </html>

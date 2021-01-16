@@ -1,5 +1,4 @@
 body {
-
   text-align: justify;
   margin: 0;
   overflow-y: hidden;
@@ -12,26 +11,15 @@ body {
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
   text-align: justify;
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* LOGO DESIGN */
 #logo {
   position: fixed;
   display: block;
-  top: 70px;
+  top: 0%;
   left: 0%;
   z-index: 9001;
   min-width: 12vw;
@@ -41,8 +29,8 @@ body {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  width: 250px;
-  height: 180px;
+  width: 200px;
+  height: 130px;
 }
 /* LOGO DESIGN END */
 /* TOP NAV-BAR */
@@ -56,7 +44,7 @@ body {
   height: 70px;
   top: 0%;
   right: 0;
-  z-index: 9001;
+  z-index: 1;
   background: rgb(238, 225, 225);
 }
 /* nav-links style */
@@ -83,25 +71,26 @@ body {
   display: flex;
   bottom: 200px;
 }
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .nav-link {
     float: none;
     width: 100%;
   }
-} */
+}
 /* nav-links style END */
 /* TOP NAV-BAR END */
 /* SIDE NAV-BAR START */
 #side-nav {
   height: 100%;
-  width: 249px;
+  width: 200px;
+  max-width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: rgb(192, 159, 159);
   overflow-x: hidden;
-  margin-top: 250px;
+  margin-top: 120px;
   transition: 0.5s;
 }
 .sidenav-links {
@@ -109,7 +98,6 @@ body {
   list-style-type: none;
   padding: 2px;
   padding-left: 15px;
-  font-size: 18px;
 }
 .top {
   padding-top: 15px;
@@ -138,143 +126,63 @@ body {
 }
 
 /* HEADER END */
-/* CONTENTS - MAIN */
+/* CONTENTS */
 
-#main-wrapper {
-  padding: 10px;
-  /* width: calc(100vw - (248px)); */
-  height: calc(100vh - (20px));
-  margin-top: -360px;
-  margin-left: 249px;
-  padding-bottom: 50px;
+#pagecontent-main {
+  margin-top: 80px;
+  height: calc(100vh - 100px);
+  padding-right: 18px;
+  padding-left: 220px;
   overflow-y: scroll;
 }
 
-/* TABLE OF CONTENTS: */
-
 #contents {
-  display: block;
-  width: 25%;
-  max-width: 250px;
+  width: 340px;
+  height: 400px;
   border-radius: 12px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-left: auto;
+  margin-top: 12px;
   border: solid 2px black;
-  float: right;
 }
 
 #content-list * {
-  position: relative;
-  z-index: 10;
   padding: 6px;
-  font-size: 14px;
 }
 
 #smalltitle {
   padding-top: 4px;
   margin-bottom: -10px;
-  padding-left: 9px;
-  font-size: 14px;
+  padding-left: 14px;
 }
 
 #moreinfo * {
-  position: relative;
-  z-index: 10;
   padding: 8px;
   margin-left: -8px;
   list-style-type: none;
-  font-size: 14px;
 }
 
 .content-item :hover {
   background-color: rgb(179, 157, 157);
-
   color: rgb(255, 255, 255);
   border-radius: 6px;
 }
-/* TABLE OF CONTENTS END */
-
-#description {
-  font-weight: bold;
-}
-
-#about-japan {
-  padding-top: 10px;
-}
 
 #about {
-  /* margin-top: 35px; */
   display: flex;
   flex-direction: column;
-  padding: 9px;
-  box-sizing: border-box;
-  text-align: justify;
-  line-height: 1.5;
-  letter-spacing: 1.5;
-  margin-top: -65px;
-}
-
-.collapsible {
-  position: relative;
-  display: none;
-  background-color: rgb(194, 137, 137);
-  color: #444;
-  cursor: pointer;
-  padding: 6px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 15px;
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  border: 1px solid black;
+  max-width: 60%;
+  padding: 12px;
 }
 
 #aboutimage {
   position: relative;
+  top: -400px;
 }
 
 #japanpic {
-  display: flex;
   width: 62.5%;
-  margin-left: 10px;
-  padding-bottom: 10px;
-}
-
-/* CONTACT */
-#contactheader {
-  display: flex;
-  flex-direction: column;
-  color: rgb(95, 16, 16);
-  border-top: 5px solid rgba(0, 0, 0, 0.212);
-  background-color: rgba(245, 222, 179, 0.418);
-}
-
-#contactheader h2 {
-  display: flex;
-  justify-content: center;
-  color: rgb(158, 41, 41);
-}
-
-#contactheader p {
-  color: red;
-  display: flex;
-  justify-content: center;
-}
-
-#gitpic {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
   height: auto;
-
   padding-top: 10px;
   position: relative;
   z-index: 10;
@@ -1071,7 +979,6 @@ body {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 960px) {
-
   /* LOGO DESIGN */
   /* #logo {
     position: fixed;
@@ -1153,9 +1060,7 @@ body {
     width: 46%;
     max-width: 250px;
     border-radius: 12px;
-
     margin-right: 160px;
-
     margin-left: 10px;
     border: solid 2px black;
     float: right;
@@ -1203,18 +1108,14 @@ body {
   #page-wrapper {
     position: relative;
     right: 220px;
-
     width: 1200px;
-
   }
 
   #about {
     display: flex;
     position: relative;
     flex-direction: column;
-
     width: 400px;
-
     left: 90px;
     padding: 9px;
     text-align: justify;
@@ -1318,11 +1219,9 @@ body {
   }
 }
 
-
 /* *************FOR MOBILE DEVICES*************** */
 
 @media only screen and (min-width: 480px) and (max-width: 500px) {
-
   .nonmobile {
     display: none;
   }
@@ -1454,9 +1353,7 @@ body {
   }
 }
 
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-
   .nonmobile {
     display: none;
   }
@@ -1586,8 +1483,6 @@ body {
     top: -30px;
   }
 }
-
-
 
 @media only screen and (max-width: 320px) {
   .nonmobile {
@@ -1721,14 +1616,12 @@ body {
 }
 
 /* Desktops and laptops ----------- */
-
 /* @media only screen and (min-width: 1224px) {
 } */
 
 /* Large screens ----------- */
 /* @media only screen and (min-width: 1824px) {
 } */
-
 
 #checkbox,
 .btn span {
@@ -1819,4 +1712,3 @@ body {
   /* Show again the word "Menu" in the button */
   display: inline;
 }
-/* Effect of showing the sidebar - ends */
