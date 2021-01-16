@@ -198,15 +198,6 @@ body *::-webkit-scrollbar {
 }
 /* TABLE OF CONTENTS END */
 
-#catpic-div {
-  position: absolute;
-  background: url("/japan-pics/cat-p1ic-japan.jpg");
-  width: 20%;
-  height: 600px;
-  margin-left: 45%;
-  margin-top: -3%;
-  border-radius: 60%;
-}
 #description {
   font-weight: bold;
 }
@@ -514,29 +505,11 @@ body *::-webkit-scrollbar {
 }
 
 /* ***************VIDEO PAGE END******************* */
-/* ****************PHOTO PAGE START************* */
-
-/* ****************PHOTO PAGE END************* */
 
 /* ***RESPONSIVITY*** */
 /* *****************FOR COMPUTER SCREENS**************** */
 
 @media only screen and (min-width: 1782px) and (max-width: 3600px) {
-  #main-wrapper-form {
-    padding: 10px;
-    height: calc(100vh - (20px));
-    width: 2800px;
-    margin-top: -365px;
-    margin-left: 330px;
-    padding-bottom: 50px;
-    overflow-y: scroll;
-  }
-
-  #form-contents {
-    position: relative;
-    left: -240px;
-  }
-
   /* LOGO DESIGN */
   #elections-div {
     display: flex;
@@ -555,6 +528,9 @@ body *::-webkit-scrollbar {
   }
 
   #logopic {
+    /* display: inline-block;
+    margin-left: auto;
+    margin-right: auto; */
     width: 220px;
     height: 220px;
   }
@@ -818,6 +794,7 @@ body *::-webkit-scrollbar {
 
   #main-wrapper {
     padding: 10px;
+    /* width: calc(100vw - (248px)); */
     height: calc(100vh - (20px));
     margin-top: -360px;
     margin-left: 249px;
@@ -1055,6 +1032,7 @@ body *::-webkit-scrollbar {
 
   #main-wrapper {
     padding: 10px;
+    /* width: calc(100vw - (248px)); */
     height: calc(100vh - (20px));
     margin-top: -360px;
     margin-left: 249px;
@@ -1204,15 +1182,6 @@ body *::-webkit-scrollbar {
 }
 
 @media only screen and (min-width: 1249px) and (max-width: 2600px) {
-  #catpic-div {
-    position: absolute;
-    background: url("/japan-pics/cat-p1ic-japan.jpg");
-    width: 40%;
-    height: 600px;
-    margin-left: 65%;
-    margin-top: 21%;
-    border-radius: 30%;
-  }
   /* LOGO DESIGN */
   #logopic {
     width: 120px;
@@ -1284,6 +1253,7 @@ body *::-webkit-scrollbar {
 
   #main-wrapper {
     padding: 10px;
+    /* width: calc(100vw - (248px)); */
     height: calc(100vh - (20px));
     margin-top: -360px;
     margin-left: 249px;
@@ -1504,6 +1474,7 @@ body *::-webkit-scrollbar {
 
   #main-wrapper {
     padding: 10px;
+    /* width: calc(100vw - (248px)); */
     height: calc(100vh - (20px));
     margin-top: -360px;
     margin-left: 249px;
@@ -1656,16 +1627,6 @@ body *::-webkit-scrollbar {
 }
 
 @media only screen and (min-width: 1249px) and (max-width: 1600px) {
-  #catpic-div {
-    position: absolute;
-    background: url("/japan-pics/cat-p1ic-japan.jpg");
-    width: 40%;
-    height: 600px;
-    margin-left: 45%;
-    margin-top: 20%;
-    border-radius: 30%;
-  }
-
   /* LOGO DESIGN */
   #logopic {
     width: 120px;
@@ -1733,6 +1694,7 @@ body *::-webkit-scrollbar {
 
   #main-wrapper {
     padding: 10px;
+    /* width: calc(100vw - (248px)); */
     height: calc(100vh - (20px));
     margin-top: -360px;
     margin-left: 249px;
@@ -1897,16 +1859,6 @@ body *::-webkit-scrollbar {
 }
 
 @media only screen and (min-width: 501px) and (max-width: 1249px) {
-  #catpic-div {
-    position: absolute;
-    background: url("/japan-pics/cat-p1ic-japan.jpg");
-    width: 60%;
-    height: 600px;
-    margin-left: 55%;
-    margin-top: 40%;
-    border-radius: 30%;
-  }
-
   #main-wrapper-videos {
     padding: 10px;
     height: calc(96vh - (20px));
