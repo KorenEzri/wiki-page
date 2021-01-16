@@ -105,12 +105,27 @@
                             <input type="email" id="email" class="formfields" placeholder="Enter your Email" required>
                         </div>
                         <div id="agediv">
-                            <label for="number" id="number-label" class="form-labels">How old are you?</label>
-                            <input type="number" id="number" class="formfields" placeholder="Enter your age" required>
+                            <label for="age"class="form-labels">How old are you?</label>
+                            <input type="number" id="age" class="formfields" max="130" placeholder="Enter your age" required>
                         </div>
                     </div>
                 </form>
             </div>
+            <div id="favorite" class="form-divs">
+                <p id="inside-header">What is your favorite thing about Japan?</p>
+                <select name="favorite" id="selectfavorite" class="formfields" required>
+                    <option disabled="" selected="" value="">Select a favorite</option>
+                    <option value="theair">The clean air</option>
+                    <option value="theasians">The asians</option>
+                    <option value="thefood">The food</option>
+                    <option value="thepokemonGo">The Pokemon GO</option>
+                </select>
+            </div>
+            <div id="apply-info">
+                <p id="inside-header">Enter your contribution: it can be anything from a photograph to a personal story.</p>
+                <textarea name="contribution" id="contribution" cols="60" rows="12" placeholder="Your tales go here" class="formfields"></textarea>
+            </div>
+            <button id="submit" type="submit" class="formfields">Submit</button>
             <!-- FORM END -->
         <!-- MAIN CONTENT END -->
         <!-- CONTACT START -->

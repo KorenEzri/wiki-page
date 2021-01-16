@@ -400,6 +400,15 @@ body *::-webkit-scrollbar {
 /* ********INDEX PAGE END********* */
 /* *************FORM PAGE START*************** */
 
+#main-wrapper-form {
+  padding: 10px;
+  height: calc(100vh - (20px));
+  margin-top: -365px;
+  margin-left: 340px;
+  padding-bottom: 50px;
+  overflow-y: scroll;
+}
+
 #form-header {
   font-size: 32px;
   color: #4bc0ebfd;
@@ -420,13 +429,13 @@ body *::-webkit-scrollbar {
   margin-left: 10px;
 }
 
-#main-wrapper-form {
-  padding: 10px;
-  height: calc(100vh - (20px));
-  margin-top: -365px;
-  margin-left: 340px;
-  padding-bottom: 50px;
-  overflow-y: scroll;
+#inside-header {
+  padding-left: 10px;
+}
+
+#selectfavorite {
+  position: relative;
+  padding: 7px;
 }
 
 /* ***RESPONSIVITY*** */
