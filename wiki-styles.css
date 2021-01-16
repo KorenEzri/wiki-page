@@ -1,3 +1,5 @@
+/* ******INDEX PAGE***** */
+
 body {
   text-align: justify;
   margin: 0;
@@ -5,6 +7,22 @@ body {
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body * {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body *::-webkit-scrollbar {
+  display: none;
+}
+
+#activelink {
+  background-color: rgba(42, 165, 63, 0.883);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
 }
 
 /* LOGO DESIGN */
@@ -379,11 +397,42 @@ body {
   display: flex;
   justify-content: center;
 }
+/* ********INDEX PAGE END********* */
+/* *************FORM PAGE START*************** */
+
+#form-header {
+  font-size: 32px;
+  color: #4bc0ebfd;
+}
+
+.formfields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 6px;
+}
+
+.form-labels {
+  display: flex;
+  font-size: 19px;
+  margin-left: 10px;
+}
+
+#main-wrapper-form {
+  padding: 10px;
+  height: calc(100vh - (20px));
+  margin-top: -365px;
+  margin-left: 340px;
+  padding-bottom: 50px;
+  overflow-y: scroll;
+}
 
 /* ***RESPONSIVITY*** */
 /* *****************FOR COMPUTER SCREENS**************** */
 
-@media only screen and (min-width: 1249px) and (max-width: 2600px) {
+@media only screen and (min-width: 1249px) and (max-width: 3600px) {
   /* LOGO DESIGN */
   /* #logo {
     position: fixed;
@@ -398,6 +447,218 @@ body {
     /* display: inline-block;
     margin-left: auto;
     margin-right: auto; */
+    width: 220px;
+    height: 220px;
+  }
+  /* LOGO DESIGN END */
+  /* TOP NAV-BAR */
+  /* nav-links style */
+
+  .nav-links * {
+    position: relative;
+    padding: 3px;
+    font-size: 20px;
+    left: -20px;
+  }
+  /* nav-links style END */
+  /* TOP NAV-BAR END */
+  /* SIDE NAV-BAR START */
+  #side-nav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    display: relative;
+    z-index: 1;
+    top: 30px;
+    left: 0;
+    background-color: rgb(192, 159, 159);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .sidenav-links {
+    display: block;
+    list-style-type: none;
+    padding: 2px;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  /* SIDE NAV-BAR END */
+  /* HEADER  */
+  #head {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+    padding-right: 1890px;
+    padding-left: 26px;
+  }
+
+  /* HEADER END */
+  /* CONTENTS - MAIN */
+
+  #main-wrapper {
+    padding: 10px;
+    /* width: calc(100vw - (248px)); */
+    height: calc(100vh - (20px));
+    margin-top: -360px;
+    margin-left: 249px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
+  /* TABLE OF CONTENTS: */
+
+  #contents {
+    display: block;
+    width: 46%;
+    max-width: 250px;
+    border-radius: 12px;
+    margin-left: 10px;
+    border: solid 2px black;
+    float: right;
+  }
+
+  #content-list * {
+    position: relative;
+    z-index: 10;
+    padding: 6px;
+    font-size: 18px;
+  }
+
+  #smalltitle {
+    padding-top: 4px;
+    margin-bottom: -10px;
+    padding-left: 9px;
+    font-size: 18px;
+  }
+
+  #moreinfo * {
+    position: relative;
+    z-index: 10;
+    padding: 8px;
+    margin-left: -8px;
+    list-style-type: none;
+    font-size: 18px;
+  }
+
+  .content-item :hover {
+    background-color: rgb(179, 157, 157);
+
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+  }
+  /* TABLE OF CONTENTS END */
+  #page-wrapper {
+    font-size: 18px;
+    position: relative;
+    right: 120px;
+    width: 2965px;
+  }
+
+  #about {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 1200px;
+    left: 90px;
+    padding: 9px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    margin-top: -75px;
+  }
+
+  #aboutimage {
+    position: relative;
+  }
+
+  #japanpic {
+    display: flex;
+    width: 62.5%;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* CONTACT */
+  #contactheader {
+    display: flex;
+    flex-direction: column;
+    color: rgb(95, 16, 16);
+    border-top: 5px solid rgba(0, 0, 0, 0.212);
+    background-color: rgba(245, 222, 179, 0.418);
+  }
+
+  #contactheader h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(158, 41, 41);
+    font-size: 20px;
+    position: relative;
+    top: -8px;
+  }
+
+  #contactheader p {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  #gitpic {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 60%;
+    margin-bottom: 10px;
+    width: 65px;
+    bottom: 22px;
+    padding: 14px;
+  }
+
+  #codepenpic {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 60px;
+    border-radius: 10%;
+    padding: 14px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  #youtubeicon {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: auto;
+    width: 70px;
+    border-radius: 11%;
+    padding: 14px;
+    top: -14px;
+  }
+
+  #contactainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 1249px) and (max-width: 2600px) {
+  /* LOGO DESIGN */
+  /* #logo {
+    position: fixed;
+    display: block;
+    top: 70px;
+    left: 0%;
+    z-index: 9001;
+    min-width: 12vw;
+    max-width: 12%;
+  } */
+  #logopic {
     width: 120px;
     height: 120px;
   }
@@ -601,25 +862,11 @@ body {
 
 @media only screen and (min-width: 1249px) and (max-width: 1600px) {
   /* LOGO DESIGN */
-  /* #logo {
-    position: fixed;
-    display: block;
-    top: 70px;
-    left: 0%;
-    z-index: 9001;
-    min-width: 12vw;
-    max-width: 12%;
-  } */
+
   #logopic {
-    /* display: inline-block;
-    margin-left: auto;
-    margin-right: auto; */
     width: 120px;
     height: 120px;
   }
-  /* LOGO DESIGN END */
-  /* TOP NAV-BAR */
-  /* nav-links style */
 
   .nav-links * {
     position: relative;
@@ -720,7 +967,7 @@ body {
   #page-wrapper {
     position: relative;
     right: 220px;
-    width: 1499px;
+    width: 1640px;
   }
 
   #about {
@@ -877,7 +1124,7 @@ body {
   #main-wrapper {
     padding: 10px;
     /* width: calc(100vw - (248px)); */
-    height: calc(100vh - (20px));
+    height: calc(94vh - (20px));
     margin-top: -360px;
     margin-left: 249px;
     padding-bottom: 50px;
