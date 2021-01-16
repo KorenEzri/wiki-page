@@ -2569,6 +2569,45 @@ body *::-webkit-scrollbar {
 /* *************FOR MOBILE DEVICES*************** */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  #main-wrapper-form {
+    padding: 10px;
+    height: calc(100vh - (20px));
+    width: 320px;
+    margin-top: -105px;
+    margin-left: 245px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
+  textarea {
+    max-width: 300px;
+  }
+
+  #page-form-wrapper {
+    width: 120px;
+  }
+
+  #form-contents {
+    display: none;
+  }
+
+  .formfields {
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  #selectfavorite {
+    padding: 2px;
+  }
+
+  #inside-header {
+    font-size: 14px;
+  }
+
+  .form-labels {
+    font-size: 14px;
+  }
+
   #contents-video-page {
     display: block;
     width: 46%;
@@ -2596,7 +2635,7 @@ body *::-webkit-scrollbar {
 
   .subtitle-header {
     font-size: 16px;
-    margin-left: 12px;
+    margin-left: 8px;
   }
 
   #elections {
@@ -2740,6 +2779,45 @@ body *::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 320px) {
+  #main-wrapper-form {
+    padding: 10px;
+    height: calc(100vh - (20px));
+    width: 320px;
+    margin-top: -105px;
+    margin-left: 245px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
+  textarea {
+    max-width: 300px;
+  }
+
+  #page-form-wrapper {
+    width: 120px;
+  }
+
+  #form-contents {
+    display: none;
+  }
+
+  .formfields {
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  #selectfavorite {
+    padding: 2px;
+  }
+
+  #inside-header {
+    font-size: 14px;
+  }
+
+  .form-labels {
+    font-size: 14px;
+  }
+
   #contents-video-page {
     display: block;
     width: 46%;
