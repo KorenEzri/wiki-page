@@ -458,6 +458,7 @@ body *::-webkit-scrollbar {
 #main-wrapper-videos {
   padding: 10px;
   height: calc(100vh - (20px));
+  width: 2500px;
   margin-top: -365px;
   margin-left: 340px;
   padding-bottom: 50px;
@@ -481,7 +482,7 @@ body *::-webkit-scrollbar {
   margin-right: auto;
   position: relative;
   width: 50%;
-  max-width: 500px;
+  max-width: 590px;
   height: auto;
   padding-bottom: 30px;
 }
@@ -495,6 +496,7 @@ body *::-webkit-scrollbar {
 
 #elections-fig {
   position: relative;
+  display: flex;
   margin-left: 690px;
   top: -48px;
   font-size: 18px;
@@ -580,7 +582,7 @@ body *::-webkit-scrollbar {
 
   #main-wrapper {
     padding: 10px;
-    /* width: calc(100vw - (248px)); */
+    width: 2530px;
     height: calc(100vh - (20px));
     margin-top: -360px;
     margin-left: 249px;
@@ -595,7 +597,6 @@ body *::-webkit-scrollbar {
     width: 46%;
     max-width: 250px;
     border-radius: 12px;
-    margin-left: 10px;
     border: solid 2px black;
     float: right;
   }
@@ -808,6 +809,7 @@ body *::-webkit-scrollbar {
     width: 46%;
     max-width: 250px;
     border-radius: 12px;
+
     margin-left: 10px;
     border: solid 2px black;
     float: right;
@@ -1463,7 +1465,7 @@ body *::-webkit-scrollbar {
 
   #elections-fig {
     position: relative;
-    margin-left: 809px;
+    margin-left: 1100px;
     top: -48px;
     font-size: 18px;
     color: #1d8125;
@@ -1487,8 +1489,8 @@ body *::-webkit-scrollbar {
     width: 46%;
     max-width: 250px;
     border-radius: 12px;
-    margin-right: 380px;
-    margin-top: 90px;
+    margin-right: 360px;
+    margin-top: 20px;
     border: solid 2px black;
     float: right;
   }
@@ -1527,6 +1529,7 @@ body *::-webkit-scrollbar {
     position: relative;
     right: 220px;
     width: 2267px;
+    /* margin-top: 220px; */
   }
 
   #about {
@@ -1557,9 +1560,11 @@ body *::-webkit-scrollbar {
   #contactheader {
     display: flex;
     flex-direction: column;
+    position: relative;
     color: rgb(95, 16, 16);
     border-top: 5px solid rgba(0, 0, 0, 0.212);
     background-color: rgba(245, 222, 179, 0.418);
+    top: 20px;
   }
 
   #contactheader h2 {
@@ -1674,13 +1679,13 @@ body *::-webkit-scrollbar {
   #elections-div {
     display: flex;
     justify-content: flex-end;
-    width: 132%;
+    width: 128%;
     margin-top: -320px;
   }
 
   #elections-fig {
     position: relative;
-    margin-left: 690px;
+    margin-left: 725px;
     top: -48px;
     font-size: 18px;
     color: #1d8125;
@@ -1698,6 +1703,17 @@ body *::-webkit-scrollbar {
   }
 
   /* TABLE OF CONTENTS: */
+
+  #contents-video-page {
+    display: block;
+    width: 46%;
+    max-width: 250px;
+    border-radius: 12px;
+    margin-top: 90px;
+    margin-right: 200px;
+    border: solid 2px black;
+    float: right;
+  }
 
   #contents {
     display: block;
@@ -1740,6 +1756,17 @@ body *::-webkit-scrollbar {
     border-radius: 6px;
   }
   /* TABLE OF CONTENTS END */
+
+  #main-wrapper-videos {
+    padding: 10px;
+    height: calc(100vh - (20px));
+    width: 1400px;
+    margin-top: -365px;
+    margin-left: 340px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
   #page-wrapper {
     position: relative;
     right: 220px;
@@ -1800,7 +1827,7 @@ body *::-webkit-scrollbar {
     border-radius: 60%;
     margin-bottom: 10px;
     width: 95px;
-    bottom: 5px;
+    bottom: 25px;
     padding: 10px;
   }
 
@@ -1823,7 +1850,6 @@ body *::-webkit-scrollbar {
     width: 100px;
     border-radius: 11%;
     padding: 10px;
-    top: 5px;
   }
 
   #contactainer {
@@ -1836,6 +1862,7 @@ body *::-webkit-scrollbar {
   #main-wrapper-videos {
     padding: 10px;
     height: calc(96vh - (20px));
+    width: 1200px;
     margin-top: -365px;
     margin-left: 340px;
     padding-bottom: 50px;
@@ -1845,13 +1872,14 @@ body *::-webkit-scrollbar {
   #elections-div {
     display: flex;
     justify-content: flex-end;
-    width: 155%;
-    margin-top: -320px;
+    width: 65%;
+    margin-top: -350px;
+    margin-left: 405px;
   }
 
   #elections-fig {
     position: relative;
-    margin-left: 690px;
+    margin-left: 620px;
     top: -48px;
     font-size: 18px;
     color: #1d8125;
@@ -2360,7 +2388,7 @@ body *::-webkit-scrollbar {
   #main-wrapper {
     padding: 10px;
     /* width: calc(100vw - (248px)); */
-    height: calc(100vh - (20px));
+    height: calc(90vh - (20px));
     margin-top: -360px;
     margin-left: 249px;
     padding-bottom: 50px;
@@ -2540,139 +2568,47 @@ body *::-webkit-scrollbar {
 
 /* *************FOR MOBILE DEVICES*************** */
 
-@media only screen and (min-device-width: 1281px) and (max-width: 500px) {
-  .nonmobile {
-    display: none;
-  }
-
-  .btn {
-    position: relative;
-    right: -250px;
-    top: -110px;
-    z-index: 9001;
-  }
-
-  .sidebar {
-    position: absolute;
-    margin-left: 250px;
-    margin-top: -110px;
-    z-index: 9001;
-    max-height: 200px;
-  }
-
-  .sidebar * {
-    position: relative;
-    font-size: 12px;
-    z-index: 9001;
-  }
-
-  #side-nav {
-    display: none;
-  }
-  .navigation-bar {
-    font-size: 12px;
-  }
-  .nav-links * {
-    font-size: 12px;
-  }
-  #head {
-    font-size: 16px;
-  }
-  #logopic {
-    display: none;
-  }
-
-  #page-wrapper {
-    position: relative;
-    right: 250px;
-    width: 705px;
-  }
-
-  #main-wrapper {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #contents-video-page {
     display: block;
-    position: relative;
+    width: 46%;
+    max-width: 250px;
+    border-radius: 12px;
+    margin-right: 920px;
+    margin-top: 175px;
+    border: solid 2px black;
+    float: right;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  #main-wrapper-videos {
     padding: 10px;
-    height: calc(100vh - (20px));
-    margin-top: -150px;
-    left: 20px;
+    height: 1200px;
+    width: 380px;
+    margin-top: -700px;
+    margin-left: 230px;
+    padding-bottom: 250px;
     overflow-y: scroll;
   }
 
-  #about {
-    position: relative;
+  .subtitle-header {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  #elections {
+    display: none;
+  }
+
+  #contact {
+    margin-top: 300px;
+    height: 50px;
     width: 420px;
-    margin-left: 15px;
   }
 
-  #about-japan {
-    z-index: -1;
-  }
-
-  #aboutbtn {
-    width: 100px;
-    left: 300px;
-  }
-
-  .collapsible {
-    display: block;
-    z-index: 10;
-  }
-
-  #aboutimage {
-    margin-top: 20px;
-  }
-
-  #contents {
-    width: 400px;
-    max-width: 1000px;
-    margin-top: 6px;
-    border: solid 2px black;
-  }
-
-  #content-list {
-    margin-top: 20px;
-  }
-
-  #content-list * {
-    position: relative;
-    padding: 4px;
-    font-size: 15px;
-    left: 35px;
-    top: 10px;
-    color: #2b2e33;
-    list-style-type: none;
-  }
-
-  #smalltitle {
-    position: relative;
-    font-size: 14px;
-    margin-left: 180px;
-    top: -135px;
-  }
-
-  #moreinfo {
-    margin-left: 220px;
-    margin-top: -135px;
-  }
-  #moreinfo * {
-    margin-left: -16px;
-    padding: 6px;
-    font-size: 14px;
-    color: #2b2e33;
-  }
-  #japanpic {
-    width: 400px;
-    padding-top: 20px;
-    padding-left: 50px;
-  }
-
-  #contactheader {
-    position: relative;
-    top: -30px;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
   .nonmobile {
     display: none;
   }
@@ -2804,6 +2740,46 @@ body *::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 320px) {
+  #contents-video-page {
+    display: block;
+    width: 46%;
+    max-width: 250px;
+    border-radius: 12px;
+    margin-right: 920px;
+    margin-top: 175px;
+    border: solid 2px black;
+    float: right;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  #main-wrapper-videos {
+    padding: 10px;
+    height: 1300px;
+    width: 450px;
+    margin-top: -700px;
+    margin-left: 230px;
+    padding-bottom: 250px;
+    overflow-y: scroll;
+  }
+
+  .subtitle-header {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  #elections {
+    display: none;
+  }
+
+  #contact {
+    margin-top: 300px;
+    height: 50px;
+    width: 480px;
+  }
+
   .nonmobile {
     display: none;
   }
@@ -2933,15 +2909,6 @@ body *::-webkit-scrollbar {
     top: -30px;
   }
 }
-
-/* Desktops and laptops ----------- */
-
-/* @media only screen and (min-width: 1224px) {
-} */
-
-/* Large screens ----------- */
-/* @media only screen and (min-width: 1824px) {
-} */
 
 #checkbox,
 .btn span {
