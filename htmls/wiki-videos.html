@@ -33,8 +33,8 @@
             <ul class="sidenav-links top">
                 <li><a href="wiki-index.html" class="sidelink first">Home</a></li>
                 <li><a href="wiki-photos.html" class="sidelink">Photos</a></li>
-                <li><a href="wiki-videos.html" class="sidelink ">Videos</a></li>
-                <li><a href="wiki-form.html" class="sidelink" id="activelink">Contribute</a></li>
+                <li><a href="wiki-videos.html" class="sidelink" id="activelink">Videos</a></li>
+                <li><a href="wiki-form.html" class="sidelink" >Contribute</a></li>
             </ul>
             <span id="contributors">Contributors</span>
             <hr class="sideseperator">
@@ -69,7 +69,7 @@
         <!-- SMALL SCREEN SIDE PANEL END -->
         <!-- MAIN CONTENT START -->
         <!-- TABLE OF CONTENTS -->
-        <div id="main-wrapper-form">
+        <div id="main-wrapper-videos">
                  <div id="contents">
                     <div id="content-table">
                         <ol id="content-list">
@@ -91,42 +91,25 @@
                     </div>
                 </div>
             <!-- TABLE OF CONTENTS END-->
-            <!-- FORM START -->
-            <div id="form-container">
-                <form action="" id="apply-info">
-                    <h1 class="subtitle-header">Apply information and contribute to the website!</h1>
-                    <div class="field-div">
-                        <div id="namediv">
-                            <label for="name" id="name-label" class="form-labels">Your name</label>
-                            <input type="text" id="name" class="formfields" placeholder="Enter your name" required>
-                        </div>
-                        <div id="emaildiv">
-                            <label for="email" id="email-label" class="form-labels">Your email</label>
-                            <input type="email" id="email" class="formfields" placeholder="Enter your Email" required>
-                        </div>
-                        <div id="agediv">
-                            <label for="age"class="form-labels">How old are you?</label>
-                            <input type="number" id="age" class="formfields" max="130" placeholder="Enter your age" required>
-                        </div>
-                    </div>
-                </form>
+            <!-- VIDEOS START -->
+        <h1 class="subtitle-header" id="videos-header">Some videos of me and Japan</h1>
+            <div id="video-div">
+                <div id="disney-div">
+                    <iframe id="disney-video" class="video" width="560" height="315" src="https://www.youtube.com/embed/JBihLocrDos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="archer-div">
+                    <iframe id="archer-video" class="video" width="560" height="315" src="https://www.youtube.com/embed/1naBPFc_ZHw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="monkey-div">
+
+                </div>
+                <div id="elections-div">
+                    <img id="elections" src="/japan-pics/elections-japan.jpg" alt="japan-elections">
+                </div>
+                <figcaption id="elections-fig">Koren, running for presidency of Japan, 2019</figcaption>
+
             </div>
-            <div id="favorite" class="form-divs">
-                <p id="inside-header">What is your favorite thing about Japan?</p>
-                <select name="favorite" id="selectfavorite" class="formfields" required>
-                    <option disabled="" selected="" value="">Select a favorite</option>
-                    <option value="theair">The clean air</option>
-                    <option value="theasians">The asians</option>
-                    <option value="thefood">The food</option>
-                    <option value="thepokemonGo">The Pokemon GO</option>
-                </select>
-            </div>
-            <div id="apply-info">
-                <p id="inside-header">Enter your contribution: it can be anything from a photograph to a personal story.</p>
-                <textarea name="contribution" id="contribution" cols="60" rows="12" placeholder="Your tales go here" class="formfields"></textarea>
-            </div>
-            <button id="submit" type="submit" class="formfields">Submit</button>
-            <!-- FORM END -->
+            <!-- VIDEOS START -->
         <!-- MAIN CONTENT END -->
         <!-- CONTACT START -->
             <span id="contactlink"></span>

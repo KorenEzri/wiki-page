@@ -409,9 +409,10 @@ body *::-webkit-scrollbar {
   overflow-y: scroll;
 }
 
-#form-header {
+.subtitle-header {
   font-size: 32px;
-  color: #4bc0ebfd;
+  color: #1d8125c5;
+  padding-left: 4px;
 }
 
 .formfields {
@@ -437,6 +438,58 @@ body *::-webkit-scrollbar {
   position: relative;
   padding: 7px;
 }
+
+/* ******************FORM PAGE END****************** */
+/* ***************VIDEO PAGE START******************* */
+
+#main-wrapper-videos {
+  padding: 10px;
+  height: calc(100vh - (20px));
+  margin-top: -365px;
+  margin-left: 340px;
+  padding-bottom: 50px;
+  overflow-y: scroll;
+}
+
+#video-div * {
+  margin: 10px;
+}
+
+#videos-header {
+  padding-left: 15px;
+}
+
+.video {
+  border: 6px solid #1d812544;
+}
+
+#elections {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+#elections-div {
+  display: flex;
+  justify-content: flex-end;
+  width: 135%;
+  margin-top: -420px;
+}
+
+#elections-fig {
+  position: relative;
+  margin-left: 690px;
+  top: -48px;
+  font-size: 18px;
+  color: #1d8125;
+  font-style: oblique;
+}
+
+/* ***************VIDEO PAGE END******************* */
 
 /* ***RESPONSIVITY*** */
 /* *****************FOR COMPUTER SCREENS**************** */
