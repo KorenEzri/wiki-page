@@ -1936,7 +1936,7 @@ body *::-webkit-scrollbar {
 
 /* *************FOR MOBILE DEVICES*************** */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 380px) and (max-width: 500px) {
   #photos-title {
     font-size: 12px;
     margin-left: -90px;
@@ -1951,7 +1951,7 @@ body *::-webkit-scrollbar {
     height: calc(100vh - (20px));
     width: 320px;
     margin-top: -105px;
-    margin-left: 245px;
+    margin-left: 225px;
     padding-bottom: 50px;
     overflow-y: scroll;
   }
@@ -2032,14 +2032,14 @@ body *::-webkit-scrollbar {
   .btn {
     position: relative;
     right: -250px;
-    top: -110px;
+    top: -153px;
     z-index: 9001;
   }
 
   .sidebar {
     position: absolute;
     margin-left: 250px;
-    margin-top: -110px;
+    margin-top: -153px;
     z-index: 9001;
     max-height: 200px;
   }
@@ -2069,6 +2069,220 @@ body *::-webkit-scrollbar {
   #page-wrapper {
     position: relative;
     right: 255px;
+    width: 705px;
+  }
+
+  #main-wrapper {
+    display: block;
+    padding: 10px;
+    height: calc(100vh - (20px));
+    margin-top: -150px;
+    margin-left: 249px;
+    overflow-y: scroll;
+  }
+
+  #about {
+    position: relative;
+    width: 420px;
+    margin-left: 15px;
+  }
+
+  #about-japan {
+    z-index: -1;
+  }
+
+  #aboutbtn {
+    width: 100px;
+    left: 300px;
+  }
+
+  .collapsible {
+    display: block;
+    z-index: 10;
+  }
+
+  #aboutimage {
+    margin-top: 20px;
+  }
+
+  #contents {
+    width: 400px;
+    max-width: 1000px;
+    margin-top: 6px;
+    border: solid 2px black;
+  }
+
+  #content-list {
+    margin-top: 20px;
+  }
+
+  #content-list * {
+    position: relative;
+    padding: 4px;
+    font-size: 15px;
+    left: 35px;
+    top: 10px;
+    color: #2b2e33;
+    list-style-type: none;
+  }
+
+  #smalltitle {
+    position: relative;
+    font-size: 14px;
+    margin-left: 180px;
+    top: -135px;
+  }
+
+  #moreinfo {
+    margin-left: 220px;
+    margin-top: -135px;
+  }
+  #moreinfo * {
+    margin-left: -16px;
+    padding: 6px;
+    font-size: 14px;
+    color: #2b2e33;
+  }
+  #japanpic {
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
+  #contactheader {
+    position: relative;
+    top: -30px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 380px) {
+  .activecontent {
+    background-color: transparent;
+  }
+
+  #main-wrapper-form {
+    padding: 10px;
+    height: calc(100vh - (20px));
+    width: 320px;
+    margin-top: -105px;
+    margin-left: 245px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
+  textarea {
+    max-width: 300px;
+  }
+
+  #page-form-wrapper {
+    width: 120px;
+  }
+
+  #form-contents {
+    display: none;
+  }
+
+  .formfields {
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  #selectfavorite {
+    padding: 2px;
+  }
+
+  #inside-header {
+    font-size: 14px;
+  }
+
+  .form-labels {
+    font-size: 14px;
+  }
+
+  #contents-video-page {
+    display: block;
+    width: 46%;
+    max-width: 250px;
+    border-radius: 12px;
+    margin-right: 920px;
+    margin-top: 175px;
+    border: solid 2px black;
+    float: right;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  #main-wrapper-videos {
+    padding: 10px;
+    height: 1300px;
+    width: 450px;
+    margin-top: -700px;
+    margin-left: 230px;
+    padding-bottom: 250px;
+    overflow-y: scroll;
+  }
+
+  .subtitle-header {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  #elections {
+    display: none;
+  }
+
+  #contact {
+    margin-top: 300px;
+    height: 50px;
+    width: 480px;
+  }
+
+  .nonmobile {
+    display: none;
+  }
+
+  .btn {
+    position: relative;
+    right: -250px;
+    top: -152px;
+    z-index: 9001;
+  }
+
+  .sidebar {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -160px;
+    z-index: 9001;
+    max-height: 200px;
+  }
+
+  .sidebar * {
+    position: relative;
+    font-size: 12px;
+    z-index: 9001;
+  }
+
+  #side-nav {
+    display: none;
+  }
+  .navigation-bar {
+    font-size: 12px;
+  }
+  .nav-links * {
+    font-size: 12px;
+  }
+  #head {
+    font-size: 11px;
+  }
+  #logopic {
+    display: none;
+  }
+
+  #page-wrapper {
+    position: relative;
+    right: 260px;
     width: 705px;
   }
 
@@ -2246,14 +2460,14 @@ body *::-webkit-scrollbar {
   .btn {
     position: relative;
     right: -250px;
-    top: -110px;
+    top: -173px;
     z-index: 9001;
   }
 
   .sidebar {
     position: absolute;
     margin-left: 250px;
-    margin-top: -110px;
+    margin-top: -174px;
     z-index: 9001;
     max-height: 200px;
   }
