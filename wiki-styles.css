@@ -1936,7 +1936,7 @@ body *::-webkit-scrollbar {
 
 /* *************FOR MOBILE DEVICES*************** */
 
-@media only screen and (min-width: 380px) and (max-width: 500px) {
+@media only screen and (min-width: 380px) and (max-width: 480px) {
   #photos-title {
     font-size: 12px;
     margin-left: -90px;
