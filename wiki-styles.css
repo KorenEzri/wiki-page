@@ -671,11 +671,16 @@ body *::-webkit-scrollbar {
 }
 
 #landscape {
-  background-image: url(/japan-pics/shirakawa-go-japan.jpg);
+  background-image: url(/japan-pics/japan-landscape.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
+#shirakawa {
+  background-image: url(/japan-pics/shirakawa-go-japan.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 /* ***************PHOTOS PAGE END**************** */
 
 /* ***RESPONSIVITY*** */
