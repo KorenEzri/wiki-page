@@ -1,5 +1,11 @@
 /* ******INDEX PAGE***** */
 
+:root {
+  --hover: rgb(179, 157, 157);
+  --nav-bckground: rgb(238, 225, 225);
+  --contact-header: rgb(158, 41, 41);
+}
+
 body {
   text-align: justify;
   margin: 0;
@@ -22,6 +28,12 @@ body *::-webkit-scrollbar {
   background-color: rgba(42, 165, 63, 0.883);
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 6px;
+}
+
+.activecontent {
+  background-color: var(--hover);
+  color: rgb(255, 255, 255);
   border-radius: 6px;
 }
 
@@ -55,7 +67,7 @@ body *::-webkit-scrollbar {
   top: 0%;
   right: 0;
   z-index: 9001;
-  background: rgb(238, 225, 225);
+  background: var(--nav-bckground);
 }
 /* nav-links style */
 .nav-links {
@@ -91,7 +103,7 @@ body *::-webkit-scrollbar {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(192, 159, 159);
+  background-color: var(--hover);
   overflow-x: hidden;
   margin-top: 250px;
   transition: 0.5s;
@@ -255,7 +267,7 @@ body *::-webkit-scrollbar {
 #contactheader {
   display: flex;
   flex-direction: column;
-  color: rgb(95, 16, 16);
+  color: var(--contact-header);
   border-top: 5px solid rgba(0, 0, 0, 0.212);
   background-color: rgba(245, 222, 179, 0.418);
 }
@@ -290,7 +302,6 @@ body *::-webkit-scrollbar {
 
 .content-item :hover {
   background-color: rgb(179, 157, 157);
-
   color: rgb(255, 255, 255);
   border-radius: 6px;
 }
@@ -2569,6 +2580,10 @@ body *::-webkit-scrollbar {
 /* *************FOR MOBILE DEVICES*************** */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .activecontent {
+    background-color: transparent;
+  }
+
   #main-wrapper-form {
     padding: 10px;
     height: calc(100vh - (20px));
@@ -2779,6 +2794,10 @@ body *::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 320px) {
+  .activecontent {
+    background-color: transparent;
+  }
+
   #main-wrapper-form {
     padding: 10px;
     height: calc(100vh - (20px));
