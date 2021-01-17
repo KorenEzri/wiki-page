@@ -4,6 +4,7 @@
   --hover: rgb(179, 157, 157);
   --nav-bckground: rgb(238, 225, 225);
   --contact-header: rgb(158, 41, 41);
+  --subheader: #1d8125c5;
 }
 
 body {
@@ -424,7 +425,7 @@ body *::-webkit-scrollbar {
 
 .subtitle-header {
   font-size: 32px;
-  color: #1d8125c5;
+  color: var(--subheader);
   padding-left: 4px;
 }
 
@@ -516,6 +517,104 @@ body *::-webkit-scrollbar {
 }
 
 /* ***************VIDEO PAGE END******************* */
+/* ***************PHOTOS PAGE START**************** */
+
+#photos-title {
+  padding-left: 30px;
+  color: var(--subheader);
+}
+
+.photos-tile {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.photos-tile * {
+  border-radius: 6%;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 80px;
+}
+
+.photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+
+@media (min-width: 200px) {
+  .photos-tile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 400px) {
+  .photos-tile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 600px) {
+  .photos-tile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .photos-tile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .photos-tile {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1600px) {
+  .photos-tile {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .photos-tile * {
+    border-radius: 6%;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 120px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .photos-tile {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .photos-tile * {
+    border-radius: 6%;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 116px;
+  }
+}
+
+#smelly {
+  background-image: url(/japan-pics/smelly-cat-japan.jpg);
+  background-size: 240px 180px;
+  background-repeat: no-repeat;
+}
+
+#bridge {
+  background-image: url(/japan-pics/bridge-japan.jpg);
+  background-size: contain;
+}
+
+/* ***************PHOTOS PAGE END**************** */
 
 /* ***RESPONSIVITY*** */
 /* *****************FOR COMPUTER SCREENS**************** */
