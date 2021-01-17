@@ -2127,6 +2127,11 @@ body *::-webkit-scrollbar {
 /* *************FOR MOBILE DEVICES*************** */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  #photos-title {
+    font-size: 12px;
+    margin-left: -90px;
+  }
+
   .activecontent {
     background-color: transparent;
   }
